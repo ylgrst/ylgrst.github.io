@@ -74,12 +74,12 @@
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: pre;
 }
 
 .experience-roundedimg {
   position: absolute;
-  object-fit: cover;
+  object-fit: fill;
   left: 0;
   right: 0;
   top: 7rem;

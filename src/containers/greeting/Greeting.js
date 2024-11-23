@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
+import helloWorld from "../../assets/lottie/helloWorld";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -36,6 +36,51 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle2}
+              </p>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle3}
+              </p>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle4}
+              </p>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle5}
+              </p>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+              >
+                {greeting.subTitle6}
+              </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
@@ -54,7 +99,7 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+              <DisplayLottie animationData={helloWorld} />
             ) : (
               <img
                 alt="man sitting on table"
